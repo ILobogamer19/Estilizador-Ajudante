@@ -1,0 +1,771 @@
+<html>
+  <head>
+    <title>Testando</title>
+  </head>
+  <body>
+    <div class="Secao_Testes">
+      <div class="Teste" id="minhaDiv">
+        <p class="paragrafo" id="meuParagrafo">Parágrafo</p>
+        <h1 class="cabecalho" id="meuCabecalho">Cabeçalho 1</h1>
+        <a class="link" id="meuLink" href="#">Link</a>
+        <ul class="lista" id="minhaLista">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <span class="span" id="meuSpan">Span</span>
+        <div class="outraDiv" id="outraDiv">
+          <em class="enfase" id="minhaEnfase">Texto em ênfase</em>
+          <strong class="forte" id="minhaForte">Texto forte</strong>
+          <img
+            class="imagem"
+            id="minhaImagem"
+            src="https://source.unsplash.com/random"
+            alt="Minha Imagem"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <style>
+        /* Estilos para a Classe "Teste" */
+        .Teste {
+          background-color: #f0f0f0;
+          padding: 20px 50px 30px 40px;
+          border: 1px solid black;
+        }
+
+        /* Estilos para a Classe "paragrafo" */
+        .paragrafo {
+          color: blue;
+          border: 5px solid red;
+        }
+
+        /* Estilos para a Classe "cabecalho" */
+        .cabecalho {
+          font-size: 50px;
+          border: 15px solid black;
+        }
+
+        /* Estilos para a Classe "link" */
+        .link {
+          text-decoration: none;
+          color: green;
+        }
+
+        /* Estilos para a Classe "lista" */
+        .lista {
+          list-style-type: square;
+        }
+
+        /* Estilos para a Classe "span" */
+        .span {
+          border: 1px solid black;
+          padding: 5px;
+        }
+
+        /* Estilos para a Classe "outraDiv" */
+        .outraDiv {
+          margin-top: 15px;
+        }
+
+        /* Estilos para a Classe "enfase" */
+        .enfase {
+          font-style: italic;
+        }
+
+        /* Estilos para a Classe "forte" */
+        .forte {
+          font-weight: bold;
+        }
+
+        /* Estilos para a Classe "imagem" */
+        .imagem {
+          max-width: 100%;
+          height: auto;
+        }
+      </style>
+    </div>
+    <div class="Secao_Programa_Ajudante">
+      <div class="Estilo_Ajudante_Programação">
+        <style>
+          .Alinhamento_Pre_Ajudante_Programacao {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100vw !important;
+          }
+          .Pre_Programa_Ajudante {
+            background-color: white;
+            position: fixed !important;
+            bottom: 0 !important;
+            border: 2px;
+            border-style: solid !important;
+            border-color: black !important;
+            margin: 10px !important;
+            padding: 5px !important;
+            font-family: consolas;
+            width: 90vw;
+            color: black !important;
+            font-size: 18px;
+            opacity: 1 !important;
+          }
+          .Tipo_Modificador {
+            display: flex !important;
+          }
+          .Tipo_Modificador label {
+            margin: 0 10px 0 0 !important;
+          }
+          .Tipo_Modificador select {
+            font-weight: bold !important;
+          }
+          .Nome_Modificador {
+            display: flex !important;
+          }
+          .Nome_Modificador select {
+            font-weight: bold !important;
+          }
+          .Nome_Modificador label {
+            margin: 0 10px 0 0 !important;
+          }
+          .Tipo_Declaracao {
+            display: flex !important;
+          }
+          .Tipo_Declaracao label {
+            margin: 0 10px 0 0 !important;
+          }
+          .Tipo_Declaracao select {
+            font-weight: bold !important;
+          }
+          .Divs_Opcoes_Numericas input {
+            width: 55px !important;
+          }
+          .Div_Flex {
+            display: none;
+          }
+          .Div_Flex label {
+            margin: 0 10px 0 0 !important;
+          }
+          .Div_margin input {
+            width: 215px !important;
+          }
+          .Div_padding input {
+            width: 215px !important;
+          }
+          .Possiveis_Modificacoes {
+            position: absolute !important;
+          }
+          .Possiveis_Modificacoes div {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            white-space: nowrap !important;
+          }
+          .Botao_Envio {
+            float: right !important;
+            margin: 0 0 0 50px !important;
+            display: flex;
+          }
+          #Botao_Alterar_Visibilidade_Oculto_Desoculto {
+            float: right;
+          }
+          .Botao_Inferior_Direito_Ajudante {
+            width: 100px;
+          }
+          .Alterar_Setas_Anterior_Proximo button {
+            position: relative;
+            top: -20px;
+            right: -237px;
+            width: 100px;
+          }
+          .Botao_Configuracoes_Personalizadas {
+            position: relative;
+            top: -40px;
+            right: 210px;
+          }
+          .Botao_Configuracoes_Personalizadas button {
+            position: absolute;
+          }
+          #Div_cssText_Valor {
+            width: 500px;
+          }
+          .Configuracoes_Do_Ajudante_De_Programacao {
+            border: 3px solid black;
+            background-color: #e2e3e5;
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            z-index: 100;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex; /*Padrão é none*/
+          }
+          .Lista_Opcoes_Configuracoes_Ajuda_De_Programacao {
+            list-style-type: none;
+            font-size: 20px;
+          }
+          .Lista_Opcoes_Configuracoes_Ajuda_De_Programacao li {
+            position: relative;
+            margin: 5px 0 0 0;
+            width: 460px;
+          }
+          .Lista_Opcoes_Configuracoes_Ajuda_De_Programacao button {
+            float: right;
+          }
+          .Botao_Salvar_Configuracoes_Em_Cookies {
+            align-self: flex-end;
+            position: relative;
+            left: -113px;
+          }
+          .Fechar_Configuracoes_Ajudante_Programacao {
+            position: relative;
+            left: 475px;
+            top: -25px;
+          }
+          .Fechar_Configuracoes_Ajudante_Programacao button {
+            width: 50px;
+            height: 50px;
+            background-color: #e2e3e5;
+            font-size: 30px;
+            border: 1px solid black;
+            border-radius: 100px;
+            position: absolute;
+          }
+          .Ajuste_Sub_Configuracao {
+            position: relative;
+            left: 40px;
+          }
+        </style>
+      </div>
+      <div class="Alinhamento_Pre_Ajudante_Programacao">
+        <div class="Pre_Programa_Ajudante">
+          <div class="Items_Ocultados_Com_Botao_Oculsao">
+            <div class="Tipo_Modificador">
+              <label for="Tipo_Modificador_Escolhido">Tipo de Nome:</label>
+              <select id="Tipo_Modificador_Escolhido">
+                <option value="Class">Class</option>
+                <option value="Id">ID</option>
+                <option value="Tag">Tag</option>
+              </select>
+            </div>
+            <div class="Nome_Modificador">
+              <label for="Selecao_Aparecer_Selecionado">Nome:</label>
+              <select id="Selecao_Aparecer_Selecionado"></select>
+            </div>
+            <div class="Tipo_Declaracao">
+              <label for="Tipo_Declaracao_Escolhido">Tipo de Declaração:</label>
+              <select id="Tipo_Declaracao_Escolhido">
+                <option value="color">Cor da Letra(color)</option>
+                <option value="fontFamily">Tipo de fonte(font-family)</option>
+                <option value="fontSize">Tamanho da Fonte(font-size)</option>
+                <option value="backgroundColor">Cor de Fundo(background-color)</option>
+                <option value="width">Tamanho da Largura(width)</option>
+                <option value="height">Tamanho da Altura(height)</option>
+                <option value="border">Controlar Borda(border)</option>
+                <option value="margin">Tamanho da Margem(margin)</option>
+                <option value="marginTop">Tamanho da Margem Topo(margin-top)</option>
+                <option value="marginRight">Tamanho da Margem Direita(margin-right)</option>
+                <option value="marginBottom">Tamanho da Margem Baixo(margin-bottom)</option>
+                <option value="marginLeft">Tamanho da Margem Esquerda(margin-left)</option>
+                <option value="padding">Tamanho do Espaço Interno(padding)</option>
+                <option value="display">Tipo de display usado(display)</option>
+                <option value="justifyContent">Controlar Eixo Principal(justify-content)</option>
+                <option value="alignItems">
+                  Alinhar elementos Flexiveis Eixo Transversal(align-items)
+                </option>
+                <option value="whiteSpace">Controlar Espaços em Branco(white-space)</option>
+                <option value="position">Tipo de Posição(position)</option>
+                <option value="top">Posição no Topo(top)</option>
+                <option value="right">Posição na Direita(right)</option>
+                <option value="bottom">Posição em Baixo(bottom)</option>
+                <option value="left">Posição na Esquerda(left)</option>
+                <option value="opacity">Transparencia(opacity)</option>
+                <option value="zIndex">Prioridade(z-index)</option>
+                <option value="overflow">Controlar oque ultrapassar(overflow)</option>
+                <option value="cursor">Cursor(cursor)</option>
+                <option value="boxShadow">Sombras(box-shadow)</option>
+                <option value="backgroundImage">Imagem de Fundo(background-image)</option>
+                <option value="backgroundPosition">
+                  Posição da Imagem de Fundo(background-position)
+                </option>
+                <option value="backgroundRepeat">
+                  Controlar como vai se repetir a imagem de fundo(background-repeat)
+                </option>
+                <option value="borderRadius">Raio de Borda(border-radius)</option>
+                <option value="letterSpacing">Espaço entre as Letras(letter-spacing)</option>
+                <option value="textAlign">Alinhamento do Texto(text-align)</option>
+                <option value="textDecoration">Decoração de Texto(text-decoration)</option>
+                <option value="textTransform">Transformação de Texto(text-transform)</option>
+                <option value="lineHeight">Espaço entre Letra e Linha(line-height)</option>
+                <option value="listStyleType">Tipo de Marcador na Lista(list-style-type)</option>
+                <option value="Alterar_Texto_innerHTML">Alterar Texto</option>
+                <option value="cssText">Varias Declarações em CSS</option>
+              </select>
+            </div>
+            <div class="Possiveis_Modificacoes">
+              <div class="Div_fontSize Div_Flex">
+                <label for="Div_fontSize_Valor">Tamanho da Fonte: </label>
+                <input type="text" id="Div_fontSize_Valor" />
+              </div>
+              <div class="Div_width Div_Flex">
+                <label for="Div_width_Valor">Tamanho da Largura: </label>
+                <input type="text" id="Div_width_Valor" />
+              </div>
+              <div class="Div_height Div_Flex">
+                <label for="Div_height_Valor">Tamanho da Altura: </label>
+                <input type="text" id="Div_height_Valor" />
+              </div>
+              <div class="Div_margin Div_Flex">
+                <label for="Div_margin_Valor">Tamanho da Margem: </label>
+                <input type="text" id="Div_margin_Valor" />
+              </div>
+              <div class="Div_marginTop Div_Flex">
+                <label for="Div_marginTop_Valor">Tamanho da Margem Topo: </label>
+                <input type="text" id="Div_marginTop_Valor" />
+              </div>
+              <div class="Div_marginRight Div_Flex">
+                <label for="Div_marginRight_Valor">Tamanho da Margem Direita: </label>
+                <input type="text" id="Div_marginRight_Valor" />
+              </div>
+              <div class="Div_marginBottom Div_Flex">
+                <label for="Div_marginBottom_Valor">Tamanho da Margem Baixo: </label>
+                <input type="text" id="Div_marginBottom_Valor" />
+              </div>
+              <div class="Div_marginLeft Div_Flex">
+                <label for="Div_marginLeft_Valor">Tamanho da Margem Esquerda: </label>
+                <input type="text" id="Div_marginLeft_Valor" />
+              </div>
+              <div class="Div_padding Div_Flex">
+                <label for="Div_padding_Valor">Tamanho do Espaço Interno: </label>
+                <input type="text" id="Div_padding_Valor" />
+              </div>
+              <div class="Div_top Div_Flex">
+                <label for="Div_top_Valor">Posição no Topo: </label>
+                <input type="text" id="Div_top_Valor" />
+              </div>
+              <div class="Div_right Div_Flex">
+                <label for="Div_right_Valor">Posição na Direita: </label>
+                <input type="text" id="Div_right_Valor" />
+              </div>
+              <div class="Div_bottom Div_Flex">
+                <label for="Div_bottom_Valor">Posição em Baixo: </label>
+                <input type="text" id="Div_bottom_Valor" />
+              </div>
+              <div class="Div_left Div_Flex">
+                <label for="Div_left_Valor">Posição na Esquerda: </label>
+                <input type="text" id="Div_left_Valor" />
+              </div>
+              <div class="Div_opacity Div_Flex">
+                <label for="Div_opacity_Valor">Transparência: </label>
+                <input type="text" id="Div_opacity_Valor" />
+              </div>
+              <div class="Div_zIndex Div_Flex">
+                <label for="Div_zIndex_Valor">Prioridade (z-index): </label>
+                <input type="text" id="Div_zIndex_Valor" />
+              </div>
+              <div class="Div_letterSpacing Div_Flex">
+                <label for="Div_letterSpacing_Valor">Espaço entre as Letras: </label>
+                <input type="text" id="Div_letterSpacing_Valor" />
+              </div>
+              <div class="Div_lineHeight Div_Flex">
+                <label for="Div_lineHeight_Valor">Espaço entre Letra e Linha: </label>
+                <input type="text" id="Div_lineHeight_Valor" />
+              </div>
+              <div class="Div_borderRadius Div_Flex">
+                <label for="Div_borderRadius_Valor">Raio da Borda: </label>
+                <input type="text" id="Div_borderRadius_Valor" />
+              </div>
+              <div class="Div_color Div_Flex">
+                <label for="Div_color_Valor">Cor da Letra: </label>
+                <input type="color" id="Div_color_Valor" />
+              </div>
+              <div class="Div_fontFamily Div_Flex">
+                <label for="Div_fontFamily_Valor">Tipo de fonte: </label>
+                <input type="text" id="Div_fontFamily_Valor" />
+              </div>
+              <div class="Div_backgroundColor Div_Flex">
+                <label for="Div_backgroundColor_Valor">Cor de Fundo: </label>
+                <input type="color" id="Div_backgroundColor_Valor" />
+              </div>
+              <div class="Div_border Div_Flex">
+                <label for="Div_border_Valor">Controlar Borda: </label>
+                <input type="text" id="Div_border_Valor" />
+              </div>
+              <div class="Div_Alterar_Texto_innerHTML Div_Flex">
+                <label for="Div_Alterar_Texto_innerHTML_Valor">Novo Texto: </label>
+                <input type="text" id="Div_Alterar_Texto_innerHTML_Valor" />
+              </div>
+              <div class="Div_display Div_Flex">
+                <label for="Div_display_Valor">Tipo de display usado: </label>
+                <select id="Div_display_Valor">
+                  <option value="block">block</option>
+                  <option value="inline">inline</option>
+                  <option value="inline-block">inline-block</option>
+                  <option value="flex">flex</option>
+                  <option value="inline-flex">inline-flex</option>
+                  <option value="table">table</option>
+                  <option value="table-row">table-row</option>
+                  <option value="table-cell">table-cell</option>
+                  <option value="none">none</option>
+                  <option value="initial">initial</option>
+                  <option value="inherit">inherit</option>
+                  <!-- adicione mais tipos de display aqui -->
+                </select>
+              </div>
+              <div class="Div_justifyContent Div_Flex">
+                <label for="Div_justifyContent_Valor">Controlar Eixo Principal: </label>
+                <select id="Div_justifyContent_Valor">
+                  <option value="flex-start">flex-start</option>
+                  <option value="flex-end">flex-end</option>
+                  <option value="center">center</option>
+                  <option value="space-between">space-between</option>
+                  <option value="space-around">space-around</option>
+                  <option value="space-evenly">space-evenly</option>
+                  <!-- adicione mais tipos de justifyContent aqui -->
+                </select>
+              </div>
+              <div class="Div_alignItems Div_Flex">
+                <label for="Div_alignItems_Valor"
+                  >Alinhar elementos Flexíveis Eixo Transversal:
+                </label>
+                <select id="Div_alignItems_Valor">
+                  <option value="stretch">stretch</option>
+                  <option value="flex-start">flex-start</option>
+                  <option value="flex-end">flex-end</option>
+                  <option value="center">center</option>
+                  <option value="baseline">baseline</option>
+                  <!-- adicione mais tipos de alignItems aqui -->
+                </select>
+              </div>
+              <div class="Div_whiteSpace Div_Flex">
+                <label for="Div_whiteSpace_Valor">Controlar Espaços em Branco: </label>
+                <select id="Div_whiteSpace_Valor">
+                  <option value="normal">normal</option>
+                  <option value="nowrap">nowrap</option>
+                  <option value="pre">pre</option>
+                  <option value="pre-line">pre-line</option>
+                  <option value="pre-wrap">pre-wrap</option>
+                  <option value="initial">initial</option>
+                  <option value="inherit">inherit</option>
+                  <!-- adicione mais tipos de whiteSpace aqui -->
+                </select>
+              </div>
+              <div class="Div_position Div_Flex">
+                <label for="Div_position_Valor">Tipo de Posição: </label>
+                <select id="Div_position_Valor">
+                  <option value="static">static</option>
+                  <option value="relative">relative</option>
+                  <option value="absolute">absolute</option>
+                  <option value="fixed">fixed</option>
+                  <option value="sticky">sticky</option>
+                  <!-- adicione mais tipos de position aqui -->
+                </select>
+              </div>
+              <div class="Div_overflow Div_Flex">
+                <label for="Div_overflow_Valor">Controlar o que ultrapassar: </label>
+                <select id="Div_overflow_Valor">
+                  <option value="visible">visible</option>
+                  <option value="hidden">hidden</option>
+                  <option value="scroll">scroll</option>
+                  <option value="auto">auto</option>
+                  <option value="inherit">inherit</option>
+                  <option value="initial">initial</option>
+                  <option value="unset">unset</option>
+                  <!-- adicione mais tipos de overflow aqui -->
+                </select>
+              </div>
+              <div class="Div_cursor Div_Flex">
+                <label for="Div_cursor_Valor">Cursor: </label>
+                <select id="Div_cursor_Valor">
+                  <option value="auto">auto</option>
+                  <option value="default">default</option>
+                  <option value="pointer">pointer</option>
+                  <option value="text">text</option>
+                  <option value="move">move</option>
+                  <option value="not-allowed">not-allowed</option>
+                  <option value="wait">wait</option>
+                  <option value="help">help</option>
+                  <option value="crosshair">crosshair</option>
+                  <option value="e-resize">e-resize</option>
+                  <option value="n-resize">n-resize</option>
+                  <option value="ne-resize">ne-resize</option>
+                  <option value="nw-resize">nw-resize</option>
+                  <option value="s-resize">s-resize</option>
+                  <option value="se-resize">se-resize</option>
+                  <option value="sw-resize">sw-resize</option>
+                  <option value="w-resize">w-resize</option>
+                  <option value="ew-resize">ew-resize</option>
+                  <option value="ns-resize">ns-resize</option>
+                  <option value="nesw-resize">nesw-resize</option>
+                  <option value="nwse-resize">nwse-resize</option>
+                  <option value="col-resize">col-resize</option>
+                  <option value="row-resize">row-resize</option>
+                  <option value="progress">progress</option>
+                  <!-- adicione mais tipos de cursor aqui -->
+                </select>
+              </div>
+              <div class="Div_boxShadow Div_Flex">
+                <label for="Div_boxShadow_Valor">Sombras: </label>
+                <input type="text" id="Div_boxShadow_Valor" />
+              </div>
+              <div class="Div_backgroundImage Div_Flex">
+                <label for="Div_backgroundImage_Valor">Imagem de Fundo: </label>
+                <input type="text" id="Div_backgroundImage_Valor" />
+              </div>
+              <div class="Div_backgroundPosition Div_Flex">
+                <label for="Div_backgroundPosition_Valor">Posição da Imagem de Fundo: </label>
+                <select id="Div_backgroundPosition_Valor">
+                  <option value="top">top</option>
+                  <option value="right">right</option>
+                  <option value="right top">right top</option>
+                  <option value="right center">right center</option>
+                  <option value="right bottom">right bottom</option>
+                  <option value="bottom">bottom</option>
+                  <option value="left">left</option>
+                  <option value="left top">left top</option>
+                  <option value="left center">left center</option>
+                  <option value="left bottom">left bottom</option>
+                  <option value="center">center</option>
+                  <option value="center top">center top</option>
+                  <option value="center center">center center</option>
+                  <option value="center bottom">center bottom</option>
+                  <!-- adicione mais posições aqui -->
+                </select>
+              </div>
+              <div class="Div_backgroundRepeat Div_Flex">
+                <label for="Div_backgroundRepeat_Valor"
+                  >Controlar como vai se repetir a imagem de fundo:
+                </label>
+                <select id="Div_backgroundRepeat_Valor">
+                  <option value="repeat">repeat</option>
+                  <option value="repeat-x">repeat-x</option>
+                  <option value="repeat-y">repeat-y</option>
+                  <option value="no-repeat">no-repeat</option>
+                  <!-- adicione mais repetições aqui -->
+                </select>
+              </div>
+              <div class="Div_textAlign Div_Flex">
+                <label for="Div_textAlign_Valor">Alinhamento do Texto: </label>
+                <select id="Div_textAlign_Valor">
+                  <option value="left">left</option>
+                  <option value="right">right</option>
+                  <option value="center">center</option>
+                  <option value="justify">justify</option>
+                  <!-- adicione mais alinhamentos aqui -->
+                </select>
+              </div>
+              <div class="Div_textDecoration Div_Flex">
+                <label for="Div_textDecoration_Valor">Decoração de Texto: </label>
+                <select id="Div_textDecoration_Valor">
+                  <option value="none">none</option>
+                  <option value="underline">underline</option>
+                  <option value="overline">overline</option>
+                  <option value="line-through">line-through</option>
+                  <option value="blink">blink</option>
+                  <!-- adicione mais decorações aqui -->
+                </select>
+              </div>
+              <div class="Div_textTransform Div_Flex">
+                <label for="Div_textTransform_Valor">Transformação de Texto: </label>
+                <select id="Div_textTransform_Valor">
+                  <option value="none">none</option>
+                  <option value="capitalize">capitalize</option>
+                  <option value="uppercase">uppercase</option>
+                  <option value="lowercase">lowercase</option>
+                  <!-- adicione mais transformações aqui -->
+                </select>
+              </div>
+              <div class="Div_listStyleType Div_Flex">
+                <label for="Div_listStyleType_Valor">Tipo de Marcador na Lista: </label>
+                <select id="Div_listStyleType_Valor">
+                  <option value="disc">disc</option>
+                  <option value="circle">circle</option>
+                  <option value="square">square</option>
+                  <option value="decimal">decimal</option>
+                  <option value="decimal-leading-zero">decimal-leading-zero</option>
+                  <option value="lower-roman">lower-roman</option>
+                  <option value="upper-roman">upper-roman</option>
+                  <option value="lower-alpha">lower-alpha</option>
+                  <option value="upper-alpha">upper-alpha</option>
+                  <option value="none">none</option>
+                  <!-- adicione mais estilos de lista aqui -->
+                </select>
+              </div>
+              <div class="Div_cssText Div_Flex">
+                <label for="Div_cssText_Valor">Várias Declarações em CSS: </label>
+                <textarea id="Div_cssText_Valor"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="Botao_Envio">
+            <div>
+              <div class="Items_Ocultados_Com_Botao_Oculsao Alterar_Setas_Anterior_Proximo">
+                <button
+                  onclick="Restaurar_Ultima_Modificacao_Realizada()"
+                  title="Desfazer última ação"
+                >
+                  <</button
+                ><button
+                  onclick="Restaurar_Posterior_Modificacao_Realizada()"
+                  title="Refazer última ação"
+                >
+                  >
+                </button>
+              </div>
+            </div>
+
+            <button
+              onclick="Visualizar_Declarações_Atribuidas_Elemento()"
+              class="Items_Ocultados_Com_Botao_Oculsao"
+              title="Vizualizar o codigo/estilo já existente"
+            >
+              Ver Codigo
+            </button>
+            <button
+              onclick="Alterar_Estilo_Elemento_Selecionado()"
+              class="Items_Ocultados_Com_Botao_Oculsao Botao_Inferior_Direito_Ajudante"
+              title="Substitui estilo do elemento/conjunto escolhido pelo novo estilo"
+            >
+              Alterar
+            </button>
+            <button
+              onclick="Alterar_Visualizacao_Do_Ajudante_De_Programacao()"
+              id="Botao_Alterar_Visibilidade_Oculto_Desoculto"
+              class="Botao_Inferior_Direito_Ajudante"
+              title="Oculta a ferramenta para melhor vizualização"
+            >
+              Ocultar
+            </button>
+            <div class="Items_Ocultados_Com_Botao_Oculsao Botao_Configuracoes_Personalizadas">
+              <button
+                title="Abre a parte de configurações"
+                onclick="Vizualizar_Configuracoes_Do_Ajudante_De_Programacao()"
+              >
+                Configurações
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="Referencia_Para_Abrir_Padroes_De_Limpeza"></div>
+        <div class="Configuracoes_Do_Ajudante_De_Programacao">
+          <div class="Fechar_Configuracoes_Ajudante_Programacao">
+            <button onclick="Fechar_Configuracoes_Do_Ajudante_De_Programacao()">X</button>
+          </div>
+          <ul class="Lista_Opcoes_Configuracoes_Ajuda_De_Programacao">
+            <li>
+              <label for="Tipo_De_Configuracao_De_Atualizacao_De_Alteracoes"
+                >Atualização Automatica</label
+              >
+              <input type="checkbox" id="Tipo_De_Configuracao_De_Atualizacao_De_Alteracoes" />
+              <button onclick="Redefinir_Para_Configuracao_Padrao_Atualizacao()">Redefinir</button>
+            </li>
+            <li>
+              <label title="Como deseja informar as cores" for="Tipo_De_Configuracao_De_Input_Cor"
+                >Configurações de cor:
+              </label>
+              <select title="Como deseja informar as cores" id="Tipo_De_Configuracao_De_Input_Cor">
+                <option value="Cor_Tipo_RGB">RGB</option>
+                <option value="Cor_Tipo_Hexadecimal">#000000</option>
+                <option value="Cor_Tipo_Escrita">Escrita(Inglês)</option>
+              </select>
+              <button onclick="Redefinir_Para_Configuracao_Padrao_Tipo_Cor()">Redefinir</button>
+            </li>
+            <li>
+              <label for="Tipo_De_Configuracao_De_Tamanho_Geral">Tamanho da Interface: </label
+              ><input
+                value="1"
+                id="Tipo_De_Configuracao_De_Tamanho_Geral"
+                style="width: 100px"
+                type="number"
+                min="1"
+              />
+              <button onclick="Redefinir_Para_Configuracao_Padrao_Tamanho_Geral()">
+                Redefinir
+              </button>
+            </li>
+            <li>
+              <label for="Tipo_De_Configuracao_De_Tipo_De_Fonte_Da_Interface"
+                >Fonte da Interface</label
+              >
+              <input type="text" id="Tipo_De_Configuracao_De_Tipo_De_Fonte_Da_Interface" />
+              <button onclick="Redefinir_Para_Configuracao_Padrao_Tipo_Fonte()">Redefinir</button>
+            </li>
+            <li>
+              <label for="Salvamento_De_Modificacoes_Dentro_Do_Site"
+                >Salvar Modificações do Site:
+              </label>
+              <input type="checkbox" id="Salvamento_De_Modificacoes_Dentro_Do_Site" />
+              <button onclick="Redefinir_Para_Configuracoes_Padrao_Salvar_Modificacoes_Do_Site()">
+                Redefinir
+              </button>
+            </li>
+            <li>
+              <label for="Marcar_Area_Que_Vai_Modificar_Ativa"
+                >Vizualizar área que vai ser alterada</label
+              >
+              <input type="checkbox" id="Marcar_Area_Que_Vai_Modificar_Ativa" />
+              <button onclick="Marcar_Area_Que_Vai_Modificar_Ativa()">Redefinir</button>
+            </li>
+            <li class="Sub_Configuracao_Marcar_Area_Que_Vai_Modificar_Ativa">
+              <label for="Sub_Configuracao_Cor_Border_Vizualizacao" class="Ajuste_Sub_Configuracao"
+                >Cor:
+              </label>
+              <input
+                type="color"
+                id="Sub_Configuracao_Cor_Border_Vizualizacao"
+                class="Ajuste_Sub_Configuracao"
+                value="#0000ff"
+              />
+              <button onclick="Sub_Configuracao_Cor_Border_Vizualizacao()">Redefinir</button>
+            </li>
+            <li class="Sub_Configuracao_Marcar_Area_Que_Vai_Modificar_Ativa">
+              <label
+                for="Sub_Configuracao_Tamanho_Border_Vizualizacao"
+                class="Ajuste_Sub_Configuracao"
+                >Tamanho:
+              </label>
+              <input
+                type="number"
+                id="Sub_Configuracao_Tamanho_Border_Vizualizacao"
+                class="Ajuste_Sub_Configuracao"
+                value="5"
+                style="width: 50px"
+              />
+              <button onclick="Sub_Configuracao_Tamanho_Border_Vizualizacao()">Redefinir</button>
+            </li>
+            <li class="Sub_Configuracao_Marcar_Area_Que_Vai_Modificar_Ativa">
+              <label
+                for="Sub_Configuracao_Marcacao_Exterior_Border_Vizualizacao"
+                class="Ajuste_Sub_Configuracao"
+                >Marcar fora do Elemento:
+              </label>
+              <input
+                type="checkbox"
+                id="Sub_Configuracao_Marcacao_Exterior_Border_Vizualizacao"
+                class="Ajuste_Sub_Configuracao"
+              />
+              <button onclick="Sub_Configuracao_Marcacao_Exterior_Border_Vizualizacao()">
+                Redefinir
+              </button>
+            </li>
+          </ul>
+          <button
+            class="Botao_Salvar_Configuracoes_Em_Cookies"
+            onclick="Restaurar_Configuracoes_Em_Cookies()"
+          >
+            Padrão
+          </button>
+          <button
+            class="Botao_Salvar_Configuracoes_Em_Cookies"
+            onclick="Salvar_Configuracoes_Em_Cookies()"
+          >
+            Salvar
+          </button>
+        </div>
+      </div>
+      <div class="Programacao_Ajudante_Programacao">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+        <script src="Programa_Pronto.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

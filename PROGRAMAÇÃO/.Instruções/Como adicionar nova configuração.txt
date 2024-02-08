@@ -1,0 +1,160 @@
+HTML:
+  1- Deve se localizar a seguinte div para adicionar a opção vizualmente:
+  -------------------------------------------------------------------------------------------
+  <div class="Configuracoes_Do_Ajudante_De_Programacao">
+  -------------------------------------------------------------------------------------------
+  1.1- A nova configuração deve ser adicionado sendo o ultimo item da lista não ordenada(<ul>)
+  1.2- Após criar uma nova tag de linha(<li>) deve se criar um Label linkado com o input/select que será atribuido
+  1.3- Crie um input/select abaixo do Label
+  Se for um input: 
+    1.4- adicione o type correspondente e de a ele um id
+  Se for um select:
+    1.4- Adicione um id ao select e crie dentro dele options com tipos de value="" diferentes e com um nome dentro diferente e que dê para referenciar ao que serve
+  1.5- Depois da criação do input/select crie um button com um onclick de refefinição
+  1.6- Dê o nome desse botão de Redefinir
+
+
+
+JavaScript:
+1- Dentro da região de funções deve se achar a região Salvar as configurações em cookies:
+-------------------------------------------------------------------------------------------
+function Salvar_Configuracoes_Em_Cookies() {
+  Valor_Configuracoes_Alteradas_De_Atualizacao_De_Alteracoes =
+    document.getElementById(
+      "Tipo_De_Configuracao_De_Atualizacao_De_Alteracoes"
+    ).checked;
+  Valor_Configuracoes_Alteradas_De_Input_Cor = document.getElementById(
+    "Tipo_De_Configuracao_De_Input_Cor"
+  ).value;
+  Etc...
+-------------------------------------------------------------------------------------------
+1.1- Abaixo da ultima sequencia de salvamentos, crie uma variavel que vai representar e carregar o valor da nova configuração
+Se for um input de checkbox:
+  1.2- De a essa nova variavel um valor = document.getElementById("").checked dentro das aspas adicione o id que você criou na etapa 1.4 do HTML
+Se for um input/select normal:
+  1.2- De a essa nova variavel um valor = document.getElementById("").value dentro das aspas adicione o id que você criou na etapa 1.4 do HTML
+1.3- Vá até a região de Cookies e Crie um Cookies.set("", ){ expires: 30,} dentro das aspas você adiciona o nome que deseja dar ao Cookie, após a virgula adicione a variavel que você criou na etapa 1.1
+
+
+
+2- Na região a baixo chamada Restaurar as configurações anteriores:
+-------------------------------------------------------------------------------------------
+function Restaurar_Configuracoes_Anteriores_Salvas_Em_Cookies() {
+  if (Cookies.get("Escolha_Configuracao_CheckBox_Atualizacao_Automatica")) {
+    if (
+      Cookies.get("Escolha_Configuracao_CheckBox_Atualizacao_Automatica") ==
+      "false"
+    ) {
+    } else {
+      document.getElementById(
+        "Tipo_De_Configuracao_De_Atualizacao_De_Alteracoes"
+      ).checked = Cookies.get(
+        "Escolha_Configuracao_CheckBox_Atualizacao_Automatica"
+      );
+      Valor_Configuracoes_Alteradas_De_Atualizacao_De_Alteracoes = Cookies.get(
+        "Escolha_Configuracao_CheckBox_Atualizacao_Automatica"
+      );
+    }
+  }
+  Etc...
+-------------------------------------------------------------------------------------------
+
+2.1- Abaixo do ultimo if, crie um novo if(Cookies.get("")){} onde o valor dentro das aspas vai ser o nome que foi dado ao Cookie na etapa 1.3
+Se for input/select normal:
+  2.2- Dentro do if adicione o seguinte a primeira linha document.getElementById("").value = Cookies.get("") dentro das primeiras aspas, adicione o id que você criou na etapa 1.4 do HTML, na segunda sequencia de aspas adicione novamente o nome que foi dado ao Cookie criado na etapa 1.3
+Se for um input do tipo checkbox:
+  2.2- Dentro do if adicione o seguinte a primeira linha document.getElementById("").checked = Cookies.get("") dentro das primeiras aspas, adicione o id que você criou na etapa 1.4 do HTML, na segunda sequencia de aspas adicione novamente o nome que foi dado ao Cookie criado na etapa 1.3
+2.3- Na segunda linha adicione novamente o nome da variavel criada na etapa 1.1 e mude o valor dela para = Cookies.get("") dentro as aspas adicione novamente o nome que foi dado ao Cookie criado na etapa 1.3
+
+
+
+3- Na região abaixo novamente chamada Restaurar para padrão as configurações em cookies: 
+-------------------------------------------------------------------------------------------
+function Restaurar_Configuracoes_Em_Cookies() {
+  document.getElementById(
+    "Tipo_De_Configuracao_De_Atualizacao_De_Alteracoes"
+  ).checked = false;
+  document.getElementById("Tipo_De_Configuracao_De_Input_Cor").value =
+    "Cor_Tipo_RGB";
+  document.getElementById("Tipo_De_Configuracao_De_Tamanho_Geral").value = "1";
+  document.getElementById(
+    "Tipo_De_Configuracao_De_Tipo_De_Fonte_Da_Interface"
+  ).value = "consolas";
+  Etc...
+-------------------------------------------------------------------------------------------
+Se for input/select normal:
+  3.1- Abaixo do ultimo document.getElementById você vai criar outro document.getElementById("").value = ""; onde na primeira sequencia de aspas deve se colocar novamente o id que foi criado na etapa 1.4 do HTML e na segunda você deve adicionar o valor padrão
+Se for um input do tipo checkbox:
+  3.1- Abaixo do ultimo document.getElementById você vai criar outro document.getElementById("").checked = ; onde na primeira sequencia de aspas deve se colocar novamente o id que foi criado na etapa 1.4 do HTML e entre o sinal de igual e o ponto e virgula deve se colocar o valor padrão(true ou false)
+
+
+
+4- Agora abaixo da ultima região com o nome Restaurar para padrão a configuração:
+-------------------------------------------------------------------------------------------
+//#region Restaurar para padrão a configuração Atualização Automatica
+
+//#region Restaurar para padrão a configuração Configurações de cor
+
+//#region Restaurar para padrão a configuração Tamanho da Interface
+
+Etc...
+-------------------------------------------------------------------------------------------
+4.1- Você deve criar uma nova região usando os comandos //#region Restaurar para padrão a configuração, e após a configuração colocar o nome do tipo de configuração, e na ultima linha adicionar um //#endregion
+4.2- Dentro da região criada deve se criar uma function (){} onde antes dos parenteses tenha o nome que foi adicionado ao button na etapa 1.5 do HTML
+4.3- Dentro da função deve se copiar o comando criado na etapa 3.1
+
+
+
+5- Indo novamente para uma região abaixo, deve se encontrar a região Alterar as configurações pela mudança:
+-------------------------------------------------------------------------------------------
+function Alterar_Modificacoes_Das_Configuracoes_Do_Programa_Ajudante() {
+  if (
+    Valor_Configuracoes_Alteradas_De_Atualizacao_De_Alteracoes == "true" ||
+    Valor_Configuracoes_Alteradas_De_Atualizacao_De_Alteracoes == true
+  ) {
+    Validador_De_Atualizacoes_De_Alteracoes = "Automatico";
+  } else {
+    Validador_De_Atualizacoes_De_Alteracoes = "Manual";
+  }
+  Etc...
+-------------------------------------------------------------------------------------------
+Se for um input:
+  5.1- Acima da primeira chamada de função deve se criar uma nova variavel e deixar o valor dela igual ao valor da variavel criada na etapa 1.1
+Se for um input checkbox:
+  5.1- Acima da primeira chamada de função deve se criar um if(){} onde é comparado se o valor da variavel criada na etapa 1.1 é "true" ||(ou) true, e se ela for criar uma nova variavel onde o valor dela fale que está ativo
+  5.2- Após o if criar um else{} onde terá a mesma variavel pórem com o valor dizendo que ela não está ativo
+Se for um select:
+  5.1- Acima da primeira chamada de função deve se criar um if(){} para cada opção existente onde cada if vai verificar se o valor da variavel criada na etapa 1.1 é igual ao value da opção, e se ele for, criar uma nova variavel e adicionar a ela um valor que remete a opção selecionada
+
+6- Após a ultima região de Alterar:
+-------------------------------------------------------------------------------------------
+//#region Alterar tamanho geral do programa ajudante
+
+//#region Alterar tipo de input para cor configuração
+
+//#region Alterar a fonte do ajudante de programacao de acordo com o usuario
+
+Etc...
+-------------------------------------------------------------------------------------------
+6.1- Crie uma região nova igual foi feito na etapa 4.1, porem com o nome da região sendo Alterar e oque a função irá fazer
+6.2- Crie uma função que a nova configuração irá utilizar
+
+7- Adicione o nome da função em todos os lugares que ela irá precisar ser ativa:
+-------------------------------------------------------------------------------------------
+//#region Salvar as configurações em cookies
+
+//#region Restaurar as configurações anteriores
+
+//#region Alterar as configurações pela mudança
+
+//#region Atualizar Tipo de Declaração
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

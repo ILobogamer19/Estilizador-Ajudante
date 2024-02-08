@@ -1,0 +1,70 @@
+1- Deve se adicionar primeiro dentro do select que é onde irá selecionar essa nova declaração:
+-------------------------------------------------------------------------------------------
+<div class="Tipo_Declaracao">
+              <label for="Tipo_Declaracao_Escolhido">Tipo de Declaração:</label>
+              <select id="Tipo_Declaracao_Escolhido">
+                <option value="color">Cor da Letra(color)</option>
+                <option value="fontFamily">Tipo de fonte(font-family)</option>
+                <option value="fontSize">Tamanho da Fonte(font-size)</option>
+                <option value="backgroundColor">Cor de Fundo(background-color)</option>
+		Etc...
+-------------------------------------------------------------------------------------------
+1.1- Dentro do value="" deve se adicionar o tipo de declaração, de maneira que seja valida usar dentro do .style.
+1.2- Depois deve se adicionar o nome/especificação em portugues e adicionar o nome em css entre parenteses ()
+
+
+Se for usar input:
+  2- Após isso deve se encontrar a localização onde irá adicionar os inputs de valores:
+  -------------------------------------------------------------------------------------------
+  <div class="Possiveis_Modificacoes">
+                <div class="Div_fontSize Div_Flex">
+                  <label for="Div_fontSize_Valor">Tamanho da Fonte: </label>
+                  <input type="text" id="Div_fontSize_Valor" />
+                </div>
+                <div class="Div_width Div_Flex">
+                  <label for="Div_width_Valor">Tamanho da Largura: </label>
+                  <input type="text" id="Div_width_Valor" />
+                </div>
+                <div class="Div_height Div_Flex">
+                  <label for="Div_height_Valor">Tamanho da Altura: </label>
+                  <input type="text" id="Div_height_Valor" />
+                </div>
+	        Etc...
+  -------------------------------------------------------------------------------------------
+  2.1- Agora deve se criar uma div com a class="Div_ Div_Flex" após o primeiro anderline deve se adicionar novamente o tipo de declaração, o mesmo que utilizou na etapa 1.1
+  2.2- Em seguida deve se adicionar um label que esteja linkado ao input abaixo, dentro do Label coloque algo que instrua oque fazer
+  2.3- Dentro do input vai adicionar o type="" e dentro dele adicionar o tipo que será usado
+  2.4- A seguir do type deve se adicionar o id="Div_ _Valor" entre os anderlines deve se adicionar novamente o tipo de declaração igual feito na etapa 1.1 e na etapa 2.1
+
+
+
+Se for necessario utilizar select:
+  2- Após isso deve se encontrar a localização onde irá adicionar os inputs de valores:
+  -------------------------------------------------------------------------------------------
+  <div class="Possiveis_Modificacoes">
+                <div class="Div_fontSize Div_Flex">
+                  <label for="Div_fontSize_Valor">Tamanho da Fonte: </label>
+                  <input type="text" id="Div_fontSize_Valor" />
+                </div>
+                <div class="Div_width Div_Flex">
+                  <label for="Div_width_Valor">Tamanho da Largura: </label>
+                  <input type="text" id="Div_width_Valor" />
+                </div>
+                <div class="Div_height Div_Flex">
+                  <label for="Div_height_Valor">Tamanho da Altura: </label>
+                  <input type="text" id="Div_height_Valor" />
+                </div>
+	        Etc...
+  -------------------------------------------------------------------------------------------
+  2.1- Agora deve se criar uma div com a class="Div_ Div_Flex" após o primeiro anderline deve se adicionar novamente o tipo de declaração, o mesmo que utilizou na etapa 1.1
+  2.2- Em seguida deve se adicionar um label que esteja linkado ao select abaixo, dentro do Label coloque algo que instrua oque fazer
+  2.3- Crie um select com o seguinte atributo id="Div_ _Valor" entre os anderlines deve se adicionar novamente o tipo de declaração igual feito na etapa 1.1 e na etapa 2.1
+  2.4- Dentro do select adicione tags de option
+  2.5- Cada option deve ter um value="" que tenha o mesmo valor que em CSS
+  2.6- O nome dentro do option deve ser o mesmo do value
+
+
+
+
+
+
